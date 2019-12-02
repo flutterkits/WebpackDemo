@@ -1,0 +1,41 @@
+{
+  "name": "RNWebApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "webBuild1": "webpack web/app/main.js -o web/public/bundle.js",
+    "webBuild2": "cd web && webpack",
+    "server": "webpack-dev-server --config web/webpack.config.js --port 8090 --open "
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-native": "0.61.5",
+    "react-native-web": "^0.11.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.0-beta.0",
+    "css-loader": "^3.2.0",
+    "eslint": "6.7.1",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.3",
+    "postcss-loader": "^3.0.0",
+    "react-test-renderer": "16.9.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
